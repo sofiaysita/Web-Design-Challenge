@@ -1,0 +1,81 @@
+/* Navbar */
+a.navbar-brand{
+    margin-left: 10px;
+    padding: 10px;
+    background-color: rgb(90, 202, 183);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(248, 248, 248);
+    font-size: 25px;
+}
+
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+.navbar li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+
+/* Getting rid of the default link styles here */
+.navbar li a {
+    color: #000;
+    text-decoration: none;
+  }
+
+/* Header*/
+h3{
+    color: rgb(90, 202, 183);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* First Image*/
+.img-thumbnail{
+    border: none;
+    float: left;
+}
+
+/* Text*/
+p{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: large;
+}
+
+/* Body Background*/
+body{
+    background-color: rgb(223, 222, 222);
+}
+.col-md-12{
+    background-color: white;
+}
+
+/* Dropdown menu */
+.nav-item.dropdown.show {
+    background-color: #ddd;
+}
+
+.dropdown-menu {
+    margin: 0;
+}
+
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 480px) {
+    .navbar li {
+      padding: 10px;
+    }
+  
+    .post {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+  
+    .navbar ul {
+      visibility: hidden;
+    }
+  
+    #nav-select {
+      visibility: visible;
+    }
+  }
+  
